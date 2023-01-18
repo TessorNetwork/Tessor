@@ -29569,7 +29569,7 @@ paths:
           type: string
       tags:
         - Query
-  /TessorNetwork/tessor/icacallbacks/callback_data:
+  /TessorNetwork/Tessor/icacallbacks/callback_data:
     get:
       summary: Queries a list of CallbackData items.
       operationId: TessornetworkTessorIcacallbacksCallbackDataAll
@@ -29699,7 +29699,7 @@ paths:
           type: boolean
       tags:
         - Query
-  '/TessorNetwork/tessor/icacallbacks/callback_data/{callbackKey}':
+  '/TessorNetwork/Tessor/icacallbacks/callback_data/{callbackKey}':
     get:
       summary: Queries a CallbackData by index.
       operationId: TessornetworkTessorIcacallbacksCallbackData
@@ -29751,7 +29751,7 @@ paths:
           type: string
       tags:
         - Query
-  /TessorNetwork/tessor/icacallbacks/params:
+  /TessorNetwork/Tessor/icacallbacks/params:
     get:
       summary: Parameters queries the parameters of the module.
       operationId: TessornetworkTessorIcacallbacksParams
@@ -29787,7 +29787,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /TessorNetwork/tessor/records/deposit_record:
+  /TessorNetwork/Tessor/records/deposit_record:
     get:
       summary: Queries a list of DepositRecord items.
       operationId: TessornetworkTessorRecordsDepositRecordAll
@@ -29931,7 +29931,7 @@ paths:
           type: boolean
       tags:
         - Query
-  '/TessorNetwork/tessor/records/deposit_record/{id}':
+  '/TessorNetwork/Tessor/records/deposit_record/{id}':
     get:
       summary: Queries a DepositRecord by id.
       operationId: TessornetworkTessorRecordsDepositRecord
@@ -29998,7 +29998,7 @@ paths:
           format: uint64
       tags:
         - Query
-  /TessorNetwork/tessor/records/epoch_unbonding_record:
+  /TessorNetwork/Tessor/records/epoch_unbonding_record:
     get:
       summary: Queries a list of EpochUnbondingRecord items.
       operationId: TessornetworkTessorRecordsEpochUnbondingRecordAll
@@ -30150,7 +30150,7 @@ paths:
           type: boolean
       tags:
         - Query
-  '/TessorNetwork/tessor/records/epoch_unbonding_record/{epochNumber}':
+  '/TessorNetwork/Tessor/records/epoch_unbonding_record/{epochNumber}':
     get:
       summary: Queries a EpochUnbondingRecord by id.
       operationId: TessornetworkTessorRecordsEpochUnbondingRecord
@@ -30225,7 +30225,7 @@ paths:
           format: uint64
       tags:
         - Query
-  /TessorNetwork/tessor/records/user_redemption_record:
+  /TessorNetwork/Tessor/records/user_redemption_record:
     get:
       summary: Queries a list of UserRedemptionRecord items.
       operationId: TessornetworkTessorRecordsUserRedemptionRecordAll
@@ -30359,7 +30359,7 @@ paths:
           type: boolean
       tags:
         - Query
-  '/TessorNetwork/tessor/records/user_redemption_record/{id}':
+  '/TessorNetwork/Tessor/records/user_redemption_record/{id}':
     get:
       summary: Queries a UserRedemptionRecord by id.
       operationId: TessornetworkTessorRecordsUserRedemptionRecord
@@ -30415,7 +30415,7 @@ paths:
           type: string
       tags:
         - Query
-  '/TessorNetwork/tessor/records/user_redemption_record_for_user/{chainId}/{day}/{address}/{limit}':
+  '/TessorNetwork/Tessor/records/user_redemption_record_for_user/{chainId}/{day}/{address}/{limit}':
     get:
       summary: Queries a list of UserRedemptionRecord items by chainId / userId pair.
       operationId: TessornetworkTessorRecordsUserRedemptionRecordForUser
@@ -30603,7 +30603,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /TessorNetwork/tessor/stakeibc/epoch_tracker:
+  /TessorNetwork/Tessor/stakeibc/epoch_tracker:
     get:
       summary: Queries a list of EpochTracker items.
       operationId: TessornetworkTessorStakeibcEpochTrackerAll
@@ -30897,7 +30897,7 @@ paths:
           type: boolean
       tags:
         - Query
-  '/TessorNetwork/tessor/stakeibc/epoch_tracker/{epochIdentifier}':
+  '/TessorNetwork/Tessor/stakeibc/epoch_tracker/{epochIdentifier}':
     get:
       summary: Queries a EpochTracker by index.
       operationId: TessornetworkTessorStakeibcEpochTracker
@@ -31113,7 +31113,7 @@ paths:
           type: string
       tags:
         - Query
-  /TessorNetwork/tessor/stakeibc/host_zone:
+  /TessorNetwork/Tessor/stakeibc/host_zone:
     get:
       summary: Queries a list of HostZone items.
       operationId: TessornetworkTessorStakeibcHostZoneAll
@@ -31724,7 +31724,7 @@ paths:
           type: boolean
       tags:
         - Query
-  '/TessorNetwork/tessor/stakeibc/host_zone/{chain_id}':
+  '/TessorNetwork/Tessor/stakeibc/host_zone/{chain_id}':
     get:
       summary: Queries a HostZone by id.
       operationId: TessornetworkTessorStakeibcHostZone
@@ -32253,7 +32253,7 @@ paths:
           type: string
       tags:
         - Query
-  /TessorNetwork/tessor/stakeibc/ica_account:
+  /TessorNetwork/Tessor/stakeibc/ica_account:
     get:
       summary: Queries a ICAAccount by index.
       operationId: TessornetworkTessorStakeibcICAAccount
@@ -32506,7 +32506,7 @@ paths:
                         }
       tags:
         - Query
-  '/TessorNetwork/tessor/stakeibc/module_address/{name}':
+  '/TessorNetwork/Tessor/stakeibc/module_address/{name}':
     get:
       summary: Queries a list of ModuleAddress items.
       operationId: TessornetworkTessorStakeibcModuleAddress
@@ -32710,7 +32710,7 @@ paths:
           type: string
       tags:
         - Query
-  '/TessorNetwork/tessor/stakeibc/validators/{chain_id}':
+  '/TessorNetwork/Tessor/stakeibc/validators/{chain_id}':
     get:
       summary: Queries a Validator by host zone.
       operationId: TessornetworkTessorStakeibcValidators

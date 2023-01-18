@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	icqtypes "github.com/TessorNetwork/tessor/v4/x/interchainquery/types"
+	icqtypes "github.com/TessorNetwork/Tessor/x/interchainquery/types"
 )
 
 const (

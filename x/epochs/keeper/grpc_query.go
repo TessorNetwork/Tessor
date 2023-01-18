@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	"github.com/TessorNetwork/Tessor/x/epochs/types"
 )
 
 var _ types.QueryServer = Keeper{}

@@ -4,7 +4,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	epochstypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	epochstypes "github.com/TessorNetwork/Tessor/x/epochs/types"
 )
 
 // BankKeeper defines the banking contract that must be fulfilled when

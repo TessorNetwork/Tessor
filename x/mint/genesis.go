@@ -3,8 +3,8 @@ package mint
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/mint/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/mint/types"
+	"github.com/TessorNetwork/Tessor/x/mint/keeper"
+	"github.com/TessorNetwork/Tessor/x/mint/types"
 )
 
 // InitGenesis new mint genesis.

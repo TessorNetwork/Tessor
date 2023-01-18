@@ -1,0 +1,6 @@
+syntax = "proto3";
+package tessor.records;
+option go_package = "github.com/TessorNetwork/Tessor/x/records/types";
+
+// ---------------------- Transfer Callback ---------------------- //
+message TransferCallback { uint64 deposit_record_id = 1; }

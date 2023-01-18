@@ -8,10 +8,10 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	icacallbacktypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
-	recordskeeper "github.com/TessorNetwork/tessor/v4/x/records/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/records/types"
-	recordtypes "github.com/TessorNetwork/tessor/v4/x/records/types"
+	icacallbacktypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
+	recordskeeper "github.com/TessorNetwork/Tessor/x/records/keeper"
+	"github.com/TessorNetwork/Tessor/x/records/types"
+	recordtypes "github.com/TessorNetwork/Tessor/x/records/types"
 )
 
 const chainId = "GAIA"

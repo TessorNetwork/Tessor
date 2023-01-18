@@ -5,7 +5,7 @@ import (
 
 	_ "github.com/stretchr/testify/suite"
 
-	"github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	"github.com/TessorNetwork/Tessor/x/epochs/types"
 )
 
 func (suite *KeeperTestSuite) TestEpochLifeCycle() {

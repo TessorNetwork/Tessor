@@ -9,10 +9,10 @@ import (
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 	"google.golang.org/grpc/status"
 
-	"github.com/TessorNetwork/tessor/v4/testutil/network"
-	"github.com/TessorNetwork/tessor/v4/testutil/nullify"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/client/cli"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/testutil/network"
+	"github.com/TessorNetwork/Tessor/testutil/nullify"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/client/cli"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 func networkWithICAAccountObjects(t *testing.T) (*network.Network, types.ICAAccount) {

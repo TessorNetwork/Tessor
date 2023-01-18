@@ -7,7 +7,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	// "github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
+	"github.com/TessorNetwork/Tessor/x/icacallbacks/types"
 )
 
 // GetTxCmd returns the transaction commands for this module

@@ -5,11 +5,11 @@ import (
 
 	"github.com/spf13/cast"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
-	recordstypes "github.com/TessorNetwork/tessor/v4/x/records/types"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/utils"
+	recordstypes "github.com/TessorNetwork/Tessor/x/records/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 
-	icacallbackstypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
+	icacallbackstypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"

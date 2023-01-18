@@ -4,7 +4,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 // SetICAAccount set iCAAccount in the store

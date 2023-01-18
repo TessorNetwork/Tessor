@@ -6,14 +6,14 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v5/modules/core/04-channel/types"
 	_ "github.com/stretchr/testify/suite"
 
-	epochtypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	epochtypes "github.com/TessorNetwork/Tessor/x/epochs/types"
 
-	icacallbacktypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
-	recordtypes "github.com/TessorNetwork/tessor/v4/x/records/types"
-	stakeibckeeper "github.com/TessorNetwork/tessor/v4/x/stakeibc/keeper"
+	icacallbacktypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
+	recordtypes "github.com/TessorNetwork/Tessor/x/records/types"
+	stakeibckeeper "github.com/TessorNetwork/Tessor/x/stakeibc/keeper"
 
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
-	stakeibc "github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
+	stakeibc "github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 type ReinvestCallbackState struct {

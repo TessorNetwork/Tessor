@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keepertest "github.com/TessorNetwork/tessor/v4/testutil/keeper"
-	"github.com/TessorNetwork/tessor/v4/testutil/nullify"
-	"github.com/TessorNetwork/tessor/v4/x/records"
-	"github.com/TessorNetwork/tessor/v4/x/records/types"
+	keepertest "github.com/TessorNetwork/Tessor/testutil/keeper"
+	"github.com/TessorNetwork/Tessor/testutil/nullify"
+	"github.com/TessorNetwork/Tessor/x/records"
+	"github.com/TessorNetwork/Tessor/x/records/types"
 )
 
 func TestGenesis(t *testing.T) {

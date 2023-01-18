@@ -10,7 +10,7 @@ import (
 	_ "github.com/stretchr/testify/suite"
 	"github.com/tendermint/tendermint/proto/tendermint/crypto"
 
-	"github.com/TessorNetwork/tessor/v4/x/interchainquery/types"
+	"github.com/TessorNetwork/Tessor/x/interchainquery/types"
 )
 
 const (

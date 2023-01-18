@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/TessorNetwork/tessor/v4/x/claim/types"
+	"github.com/TessorNetwork/Tessor/x/claim/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

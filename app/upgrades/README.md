@@ -11,7 +11,7 @@ version.Version = "{newVersion}"
 Version = "{newVersion}"
 
 // go.mod (will need to update all imports after)
-module github.com/TessorNetwork/tessor/{newVersion}
+module github.com/TessorNetwork/Tessor/{newVersion}
 ```
 
 ## Create Upgrade Handler
@@ -114,7 +114,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-    {upgradeVersion} "github.com/TessorNetwork/tessor/v3/x/records/migrations/{upgradeVersion}"
+    {upgradeVersion} "github.com/TessorNetwork/Tessor/x/records/migrations/{upgradeVersion}"
 )
 
 type Migrator struct {
@@ -137,7 +137,7 @@ package {upgradeVersion}
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	{oldVersion} "github.com/TessorNetwork/tessor/v3/x/records/migrations/{oldVersion}"
+	{oldVersion} "github.com/TessorNetwork/Tessor/x/records/migrations/{oldVersion}"
 )
 
 // TODO: Add migration logic to deserialize with old protos and re-serialize with new ones

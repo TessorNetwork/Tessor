@@ -10,9 +10,9 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/spf13/cast"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
-	icqtypes "github.com/TessorNetwork/tessor/v4/x/interchainquery/types"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/utils"
+	icqtypes "github.com/TessorNetwork/Tessor/x/interchainquery/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 // WithdrawalBalanceCallback is a callback handler for WithdrawalBalance queries.

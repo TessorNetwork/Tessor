@@ -11,8 +11,8 @@ import (
 	stakingTypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/spf13/cast"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/utils"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 func (k msgServer) RebalanceValidators(goCtx context.Context, msg *types.MsgRebalanceValidators) (*types.MsgRebalanceValidatorsResponse, error) {

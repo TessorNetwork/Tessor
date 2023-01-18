@@ -5,10 +5,10 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v5/modules/core/04-channel/types"
 	_ "github.com/stretchr/testify/suite"
 
-	icacallbacktypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
-	stakeibckeeper "github.com/TessorNetwork/tessor/v4/x/stakeibc/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
-	stakeibctypes "github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	icacallbacktypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
+	stakeibckeeper "github.com/TessorNetwork/Tessor/x/stakeibc/keeper"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
+	stakeibctypes "github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 type RebalanceCallbackState struct {

@@ -20,10 +20,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/TessorNetwork/tessor/v4/x/epochs/client/cli"
-	"github.com/TessorNetwork/tessor/v4/x/epochs/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/epochs/simulation"
-	"github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	"github.com/TessorNetwork/Tessor/x/epochs/client/cli"
+	"github.com/TessorNetwork/Tessor/x/epochs/keeper"
+	"github.com/TessorNetwork/Tessor/x/epochs/simulation"
+	"github.com/TessorNetwork/Tessor/x/epochs/types"
 )
 
 var (

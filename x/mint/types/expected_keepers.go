@@ -1,7 +1,7 @@
 package types // noalias
 
 import (
-	epochstypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	epochstypes "github.com/TessorNetwork/Tessor/x/epochs/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/x/auth/types"

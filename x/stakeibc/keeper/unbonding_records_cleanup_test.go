@@ -4,9 +4,9 @@ import (
 	sdkmath "cosmossdk.io/math"
 	_ "github.com/stretchr/testify/suite"
 
-	recordtypes "github.com/TessorNetwork/tessor/v4/x/records/types"
+	recordtypes "github.com/TessorNetwork/Tessor/x/records/types"
 
-	stakeibc "github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	stakeibc "github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 type CleanupEpochUnbondingRecordsTestCase struct {

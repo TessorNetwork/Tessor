@@ -10,9 +10,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/stretchr/testify/suite"
 
-	recordtypes "github.com/TessorNetwork/tessor/v4/x/records/types"
+	recordtypes "github.com/TessorNetwork/Tessor/x/records/types"
 
-	stakeibctypes "github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	stakeibctypes "github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 type UpdateRedemptionRatesTestCase struct {

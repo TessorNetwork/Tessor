@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
+	"github.com/TessorNetwork/Tessor/x/icacallbacks/types"
 )
 
 func (k Keeper) CallbackDataAll(c context.Context, req *types.QueryAllCallbackDataRequest) (*types.QueryAllCallbackDataResponse, error) {

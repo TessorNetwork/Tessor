@@ -10,7 +10,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/claim/types"
+	"github.com/TessorNetwork/Tessor/x/claim/types"
 )
 
 func CmdSetAirdropAllocations() *cobra.Command {

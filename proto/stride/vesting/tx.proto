@@ -1,0 +1,7 @@
+syntax = "proto3";
+package tessor.vesting;
+
+option go_package = "github.com/TessorNetwork/Tessor/x/claim/vesting/types";
+
+// Msg defines the bank Msg service.
+service Msg {}

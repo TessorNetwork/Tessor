@@ -23,7 +23,7 @@ import (
 	"github.com/tendermint/tendermint/crypto/ed25519"
 	tmtypes "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/TessorNetwork/tessor/v4/app"
+	"github.com/TessorNetwork/Tessor/app"
 )
 
 var (

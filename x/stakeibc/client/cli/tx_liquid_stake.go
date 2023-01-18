@@ -10,7 +10,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/spf13/cobra"
 
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 var _ = strconv.Itoa(0)

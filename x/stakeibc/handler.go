@@ -8,8 +8,8 @@ import (
 
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/keeper"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 // NewHandler ...

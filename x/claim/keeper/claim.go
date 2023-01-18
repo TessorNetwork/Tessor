@@ -14,10 +14,10 @@ import (
 	authvestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
-	"github.com/TessorNetwork/tessor/v4/x/claim/types"
-	vestingtypes "github.com/TessorNetwork/tessor/v4/x/claim/vesting/types"
-	epochstypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	"github.com/TessorNetwork/Tessor/utils"
+	"github.com/TessorNetwork/Tessor/x/claim/types"
+	vestingtypes "github.com/TessorNetwork/Tessor/x/claim/vesting/types"
+	epochstypes "github.com/TessorNetwork/Tessor/x/epochs/types"
 )
 
 func (k Keeper) LoadAllocationData(ctx sdk.Context, allocationData string) bool {

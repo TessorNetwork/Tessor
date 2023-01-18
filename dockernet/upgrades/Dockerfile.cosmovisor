@@ -16,7 +16,7 @@ RUN git clone https://github.com/cosmos/cosmos-sdk \
 RUN --mount=type=cache,target=/root/.cache/go-build cd /opt/cosmos-sdk && make cosmovisor 
 
 # Build the old binary
-RUN git clone https://github.com/TessorNetwork/tessor.git \
+RUN git clone https://github.com/TessorNetwork/Tessor.git \
     && cd tessor \
     && git checkout $old_commit_hash \
     && sed -i -E "s|tessor1k8c2m5cn322akk5wy8lpt87dd2f4yh9azg7jlh|$tessor_admin_address|g" utils/admins.go \

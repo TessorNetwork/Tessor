@@ -14,13 +14,13 @@ import (
 	ibctransferkeeper "github.com/cosmos/ibc-go/v5/modules/apps/transfer/keeper"
 	ibctypes "github.com/cosmos/ibc-go/v5/modules/apps/transfer/types"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
-	icacallbackskeeper "github.com/TessorNetwork/tessor/v4/x/icacallbacks/keeper"
-	icacallbackstypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
+	"github.com/TessorNetwork/Tessor/utils"
+	icacallbackskeeper "github.com/TessorNetwork/Tessor/x/icacallbacks/keeper"
+	icacallbackstypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
 
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/records/types"
+	"github.com/TessorNetwork/Tessor/x/records/types"
 )
 
 type (

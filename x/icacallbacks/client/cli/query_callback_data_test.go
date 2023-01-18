@@ -12,10 +12,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/TessorNetwork/tessor/v4/testutil/network"
-	"github.com/TessorNetwork/tessor/v4/testutil/nullify"
-	"github.com/TessorNetwork/tessor/v4/x/icacallbacks/client/cli"
-	"github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
+	"github.com/TessorNetwork/Tessor/testutil/network"
+	"github.com/TessorNetwork/Tessor/testutil/nullify"
+	"github.com/TessorNetwork/Tessor/x/icacallbacks/client/cli"
+	"github.com/TessorNetwork/Tessor/x/icacallbacks/types"
 )
 
 // Prevent strconv unused error

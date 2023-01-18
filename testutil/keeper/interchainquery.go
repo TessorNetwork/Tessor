@@ -7,8 +7,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	tessorapp "github.com/TessorNetwork/tessor/v4/app"
-	"github.com/TessorNetwork/tessor/v4/x/interchainquery/keeper"
+	tessorapp "github.com/TessorNetwork/Tessor/app"
+	"github.com/TessorNetwork/Tessor/x/interchainquery/keeper"
 )
 
 func InterchainqueryKeeper(t testing.TB) (*keeper.Keeper, sdk.Context) {

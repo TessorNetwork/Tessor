@@ -9,8 +9,8 @@ import (
 	ibctesting "github.com/cosmos/ibc-go/v5/testing"
 	_ "github.com/stretchr/testify/suite"
 
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
-	stakeibctypes "github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
+	stakeibctypes "github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 type ClearBalanceState struct {

@@ -7,10 +7,10 @@ import (
 
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
-	epochtypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
-	icqtypes "github.com/TessorNetwork/tessor/v4/x/interchainquery/types"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/utils"
+	epochtypes "github.com/TessorNetwork/Tessor/x/epochs/types"
+	icqtypes "github.com/TessorNetwork/Tessor/x/interchainquery/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 // DelegatorSharesCallback is a callback handler for UpdateValidatorSharesExchRate queries.

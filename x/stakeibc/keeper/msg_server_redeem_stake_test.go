@@ -7,9 +7,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/stretchr/testify/suite"
 
-	epochtypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
-	recordtypes "github.com/TessorNetwork/tessor/v4/x/records/types"
-	stakeibctypes "github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	epochtypes "github.com/TessorNetwork/Tessor/x/epochs/types"
+	recordtypes "github.com/TessorNetwork/Tessor/x/records/types"
+	stakeibctypes "github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 type RedeemStakeState struct {

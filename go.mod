@@ -1,4 +1,4 @@
-module github.com/TessorNetwork/tessor/v4
+module github.com/TessorNetwork/Tessor
 
 go 1.19
 

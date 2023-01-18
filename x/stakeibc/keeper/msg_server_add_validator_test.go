@@ -6,7 +6,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	stakeibctypes "github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	stakeibctypes "github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 type AddValidatorTestCase struct {

@@ -13,8 +13,8 @@ import (
 	tmclienttypes "github.com/cosmos/ibc-go/v5/modules/light-clients/07-tendermint/types"
 	"github.com/spf13/cast"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
-	"github.com/TessorNetwork/tessor/v4/x/interchainquery/types"
+	"github.com/TessorNetwork/Tessor/utils"
+	"github.com/TessorNetwork/Tessor/x/interchainquery/types"
 )
 
 type msgServer struct {

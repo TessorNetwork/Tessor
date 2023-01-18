@@ -19,10 +19,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/TessorNetwork/tessor/v4/x/interchainquery/keeper"
+	"github.com/TessorNetwork/Tessor/x/interchainquery/keeper"
 
-	"github.com/TessorNetwork/tessor/v4/x/interchainquery/client/cli"
-	"github.com/TessorNetwork/tessor/v4/x/interchainquery/types"
+	"github.com/TessorNetwork/Tessor/x/interchainquery/client/cli"
+	"github.com/TessorNetwork/Tessor/x/interchainquery/types"
 )
 
 var (

@@ -7,8 +7,8 @@ import (
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/utils"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 // This function returns a map from Validator Address to how many extra tokens need to be given to that validator

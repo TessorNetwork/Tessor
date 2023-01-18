@@ -12,8 +12,8 @@ import (
 
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
-	"github.com/TessorNetwork/tessor/v4/x/interchainquery/types"
+	"github.com/TessorNetwork/Tessor/utils"
+	"github.com/TessorNetwork/Tessor/x/interchainquery/types"
 )
 
 // Keeper of this module maintains collections of registered zones.

@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/TessorNetwork/tessor/v4/x/claim/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/claim/types"
+	"github.com/TessorNetwork/Tessor/x/claim/keeper"
+	"github.com/TessorNetwork/Tessor/x/claim/types"
 )
 
 // NewHandler returns claim module messages

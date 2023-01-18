@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/records/types"
+	"github.com/TessorNetwork/Tessor/x/records/types"
 )
 
 // GetParams get all parameters as types.Params

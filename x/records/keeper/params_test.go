@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	testkeeper "github.com/TessorNetwork/tessor/v4/testutil/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/records/types"
+	testkeeper "github.com/TessorNetwork/Tessor/testutil/keeper"
+	"github.com/TessorNetwork/Tessor/x/records/types"
 )
 
 func TestGetParams(t *testing.T) {

@@ -9,7 +9,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	"github.com/TessorNetwork/Tessor/x/epochs/types"
 )
 
 // RandomizedGenState generates a random GenesisState for mint

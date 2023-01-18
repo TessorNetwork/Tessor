@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/TessorNetwork/tessor/v4/x/records/types"
+	"github.com/TessorNetwork/Tessor/x/records/types"
 )
 
 func (k Keeper) UserRedemptionRecordForUser(c context.Context, req *types.QueryAllUserRedemptionRecordForUserRequest) (*types.QueryAllUserRedemptionRecordForUserResponse, error) {

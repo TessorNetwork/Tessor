@@ -20,7 +20,7 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	cmdcfg "github.com/TessorNetwork/tessor/v4/cmd/tessord/config"
+	cmdcfg "github.com/TessorNetwork/Tessor/cmd/tessord/config"
 )
 
 const Bech32Prefix = "tessor"

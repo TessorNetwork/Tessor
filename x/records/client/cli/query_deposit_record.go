@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
 
-	"github.com/TessorNetwork/tessor/v4/x/records/types"
+	"github.com/TessorNetwork/Tessor/x/records/types"
 )
 
 func CmdListDepositRecord() *cobra.Command {

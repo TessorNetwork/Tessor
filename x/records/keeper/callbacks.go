@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	icacallbackstypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
+	icacallbackstypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	channeltypes "github.com/cosmos/ibc-go/v5/modules/core/04-channel/types"

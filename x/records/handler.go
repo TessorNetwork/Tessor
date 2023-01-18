@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/TessorNetwork/tessor/v4/x/records/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/records/types"
+	"github.com/TessorNetwork/Tessor/x/records/keeper"
+	"github.com/TessorNetwork/Tessor/x/records/types"
 )
 
 // NewHandler ...

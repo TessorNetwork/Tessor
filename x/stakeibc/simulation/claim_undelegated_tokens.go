@@ -7,8 +7,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/keeper"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 func SimulateMsgClaimUndelegatedTokens(

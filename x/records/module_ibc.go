@@ -10,10 +10,10 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v5/modules/core/04-channel/types"
 	porttypes "github.com/cosmos/ibc-go/v5/modules/core/05-port/types"
 
-	icacallbacks "github.com/TessorNetwork/tessor/v4/x/icacallbacks"
-	icacallbacktypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
+	icacallbacks "github.com/TessorNetwork/Tessor/x/icacallbacks"
+	icacallbacktypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/records/keeper"
+	"github.com/TessorNetwork/Tessor/x/records/keeper"
 
 	// "google.golang.org/protobuf/proto" <-- this breaks tx parsing
 

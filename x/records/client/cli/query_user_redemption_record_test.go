@@ -14,10 +14,10 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/TessorNetwork/tessor/v4/testutil/network"
-	"github.com/TessorNetwork/tessor/v4/testutil/nullify"
-	"github.com/TessorNetwork/tessor/v4/x/records/client/cli"
-	"github.com/TessorNetwork/tessor/v4/x/records/types"
+	"github.com/TessorNetwork/Tessor/testutil/network"
+	"github.com/TessorNetwork/Tessor/testutil/nullify"
+	"github.com/TessorNetwork/Tessor/x/records/client/cli"
+	"github.com/TessorNetwork/Tessor/x/records/types"
 )
 
 func networkWithUserRedemptionRecordObjects(t *testing.T, n int) (*network.Network, []types.UserRedemptionRecord) {

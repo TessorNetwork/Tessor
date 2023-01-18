@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
 
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 func CmdAddValidator() *cobra.Command {

@@ -7,10 +7,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	keepertest "github.com/TessorNetwork/tessor/v4/testutil/keeper"
-	"github.com/TessorNetwork/tessor/v4/testutil/nullify"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	keepertest "github.com/TessorNetwork/Tessor/testutil/keeper"
+	"github.com/TessorNetwork/Tessor/testutil/nullify"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/keeper"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 // Prevent strconv unused error

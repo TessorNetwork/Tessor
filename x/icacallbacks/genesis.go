@@ -3,8 +3,8 @@ package icacallbacks
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/icacallbacks/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
+	"github.com/TessorNetwork/Tessor/x/icacallbacks/keeper"
+	"github.com/TessorNetwork/Tessor/x/icacallbacks/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

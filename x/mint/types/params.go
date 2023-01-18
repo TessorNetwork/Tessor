@@ -7,7 +7,7 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	epochtypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	epochtypes "github.com/TessorNetwork/Tessor/x/epochs/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"

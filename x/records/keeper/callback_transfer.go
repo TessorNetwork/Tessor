@@ -5,8 +5,8 @@ import (
 
 	ibctransfertypes "github.com/cosmos/ibc-go/v5/modules/apps/transfer/types"
 
-	icacallbackstypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
-	"github.com/TessorNetwork/tessor/v4/x/records/types"
+	icacallbackstypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
+	"github.com/TessorNetwork/Tessor/x/records/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"

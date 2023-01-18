@@ -16,9 +16,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/TessorNetwork/tessor/v4/x/claim/client/cli"
-	"github.com/TessorNetwork/tessor/v4/x/claim/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/claim/types"
+	"github.com/TessorNetwork/Tessor/x/claim/client/cli"
+	"github.com/TessorNetwork/Tessor/x/claim/keeper"
+	"github.com/TessorNetwork/Tessor/x/claim/types"
 )
 
 var (

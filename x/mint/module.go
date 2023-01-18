@@ -17,11 +17,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/TessorNetwork/tessor/v4/x/mint/client/cli"
-	"github.com/TessorNetwork/tessor/v4/x/mint/keeper"
+	"github.com/TessorNetwork/Tessor/x/mint/client/cli"
+	"github.com/TessorNetwork/Tessor/x/mint/keeper"
 
-	//"github.com/TessorNetwork/tessor/v4/x/mint/simulation"
-	"github.com/TessorNetwork/tessor/v4/x/mint/types"
+	//"github.com/TessorNetwork/Tessor/x/mint/simulation"
+	"github.com/TessorNetwork/Tessor/x/mint/types"
 )
 
 var (

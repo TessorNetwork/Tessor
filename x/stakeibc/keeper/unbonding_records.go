@@ -10,9 +10,9 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/spf13/cast"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
-	recordstypes "github.com/TessorNetwork/tessor/v4/x/records/types"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/utils"
+	recordstypes "github.com/TessorNetwork/Tessor/x/records/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 func (k Keeper) CreateEpochUnbondingRecord(ctx sdk.Context, epochNumber uint64) bool {

@@ -7,7 +7,7 @@ import (
 
 	porttypes "github.com/cosmos/ibc-go/v5/modules/core/05-port/types"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
+	"github.com/TessorNetwork/Tessor/utils"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/client"
@@ -54,12 +54,12 @@ import (
 	govtypesv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	govtypesv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 
-	claimvesting "github.com/TessorNetwork/tessor/v4/x/claim/vesting"
-	claimvestingtypes "github.com/TessorNetwork/tessor/v4/x/claim/vesting/types"
+	claimvesting "github.com/TessorNetwork/Tessor/x/claim/vesting"
+	claimvestingtypes "github.com/TessorNetwork/Tessor/x/claim/vesting/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/mint"
-	mintkeeper "github.com/TessorNetwork/tessor/v4/x/mint/keeper"
-	minttypes "github.com/TessorNetwork/tessor/v4/x/mint/types"
+	"github.com/TessorNetwork/Tessor/x/mint"
+	mintkeeper "github.com/TessorNetwork/Tessor/x/mint/keeper"
+	minttypes "github.com/TessorNetwork/Tessor/x/mint/types"
 
 	"github.com/cosmos/cosmos-sdk/x/params"
 	paramsclient "github.com/cosmos/cosmos-sdk/x/params/client"
@@ -106,27 +106,27 @@ import (
 	// monitoringp "github.com/tendermint/spn/x/monitoringp"
 	// monitoringpkeeper "github.com/tendermint/spn/x/monitoringp/keeper"
 
-	epochsmodule "github.com/TessorNetwork/tessor/v4/x/epochs"
-	epochsmodulekeeper "github.com/TessorNetwork/tessor/v4/x/epochs/keeper"
-	epochsmoduletypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	epochsmodule "github.com/TessorNetwork/Tessor/x/epochs"
+	epochsmodulekeeper "github.com/TessorNetwork/Tessor/x/epochs/keeper"
+	epochsmoduletypes "github.com/TessorNetwork/Tessor/x/epochs/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/interchainquery"
-	interchainquerykeeper "github.com/TessorNetwork/tessor/v4/x/interchainquery/keeper"
-	interchainquerytypes "github.com/TessorNetwork/tessor/v4/x/interchainquery/types"
+	"github.com/TessorNetwork/Tessor/x/interchainquery"
+	interchainquerykeeper "github.com/TessorNetwork/Tessor/x/interchainquery/keeper"
+	interchainquerytypes "github.com/TessorNetwork/Tessor/x/interchainquery/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/claim"
-	claimkeeper "github.com/TessorNetwork/tessor/v4/x/claim/keeper"
-	claimtypes "github.com/TessorNetwork/tessor/v4/x/claim/types"
-	icacallbacksmodule "github.com/TessorNetwork/tessor/v4/x/icacallbacks"
-	icacallbacksmodulekeeper "github.com/TessorNetwork/tessor/v4/x/icacallbacks/keeper"
-	icacallbacksmoduletypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
-	recordsmodule "github.com/TessorNetwork/tessor/v4/x/records"
-	recordsmodulekeeper "github.com/TessorNetwork/tessor/v4/x/records/keeper"
-	recordsmoduletypes "github.com/TessorNetwork/tessor/v4/x/records/types"
-	stakeibcmodule "github.com/TessorNetwork/tessor/v4/x/stakeibc"
-	stakeibcclient "github.com/TessorNetwork/tessor/v4/x/stakeibc/client"
-	stakeibcmodulekeeper "github.com/TessorNetwork/tessor/v4/x/stakeibc/keeper"
-	stakeibcmoduletypes "github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/x/claim"
+	claimkeeper "github.com/TessorNetwork/Tessor/x/claim/keeper"
+	claimtypes "github.com/TessorNetwork/Tessor/x/claim/types"
+	icacallbacksmodule "github.com/TessorNetwork/Tessor/x/icacallbacks"
+	icacallbacksmodulekeeper "github.com/TessorNetwork/Tessor/x/icacallbacks/keeper"
+	icacallbacksmoduletypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
+	recordsmodule "github.com/TessorNetwork/Tessor/x/records"
+	recordsmodulekeeper "github.com/TessorNetwork/Tessor/x/records/keeper"
+	recordsmoduletypes "github.com/TessorNetwork/Tessor/x/records/types"
+	stakeibcmodule "github.com/TessorNetwork/Tessor/x/stakeibc"
+	stakeibcclient "github.com/TessorNetwork/Tessor/x/stakeibc/client"
+	stakeibcmodulekeeper "github.com/TessorNetwork/Tessor/x/stakeibc/keeper"
+	stakeibcmoduletypes "github.com/TessorNetwork/Tessor/x/stakeibc/types"
 
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"

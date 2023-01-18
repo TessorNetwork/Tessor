@@ -6,9 +6,9 @@ import (
 	ibctesting "github.com/cosmos/ibc-go/v5/testing"
 	_ "github.com/stretchr/testify/suite"
 
-	epochtypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
-	stakeibctypes "github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	epochtypes "github.com/TessorNetwork/Tessor/x/epochs/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
+	stakeibctypes "github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 // ================================ 1: QueryValidatorExchangeRate =============================================

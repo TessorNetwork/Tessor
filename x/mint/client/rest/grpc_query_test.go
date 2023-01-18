@@ -14,8 +14,8 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/TessorNetwork/tessor/v4/app"
-	minttypes "github.com/TessorNetwork/tessor/v4/x/mint/types"
+	"github.com/TessorNetwork/Tessor/app"
+	minttypes "github.com/TessorNetwork/Tessor/x/mint/types"
 
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 )

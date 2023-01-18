@@ -11,11 +11,11 @@ import (
 	host "github.com/cosmos/ibc-go/v5/modules/core/24-host"
 	ibcexported "github.com/cosmos/ibc-go/v5/modules/core/exported"
 
-	"github.com/TessorNetwork/tessor/v4/x/icacallbacks"
-	icacallbacktypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
+	"github.com/TessorNetwork/Tessor/x/icacallbacks"
+	icacallbacktypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/keeper"
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/keeper"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 // IBCModule implements the ICS26 interface for interchain accounts controller chains

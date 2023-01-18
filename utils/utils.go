@@ -15,9 +15,9 @@ import (
 
 	channeltypes "github.com/cosmos/ibc-go/v5/modules/core/04-channel/types"
 
-	config "github.com/TessorNetwork/tessor/v4/cmd/tessord/config"
-	icacallbacktypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
-	recordstypes "github.com/TessorNetwork/tessor/v4/x/records/types"
+	config "github.com/TessorNetwork/Tessor/cmd/tessord/config"
+	icacallbacktypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
+	recordstypes "github.com/TessorNetwork/Tessor/x/records/types"
 )
 
 func FilterDepositRecords(arr []recordstypes.DepositRecord, condition func(recordstypes.DepositRecord) bool) (ret []recordstypes.DepositRecord) {

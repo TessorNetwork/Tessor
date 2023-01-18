@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/TessorNetwork/tessor/v4/x/mint/types"
+	"github.com/TessorNetwork/Tessor/x/mint/types"
 )
 
 var _ types.QueryServer = Querier{}

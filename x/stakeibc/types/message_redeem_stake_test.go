@@ -8,7 +8,7 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/TessorNetwork/tessor/v4/testutil/sample"
+	"github.com/TessorNetwork/Tessor/testutil/sample"
 )
 
 func TestMsgRedeemStake_ValidateBasic(t *testing.T) {

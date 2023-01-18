@@ -12,10 +12,10 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	epochtypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
-	icacallbackstypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
-	recordstypes "github.com/TessorNetwork/tessor/v4/x/records/types"
-	stakeibctypes "github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	epochtypes "github.com/TessorNetwork/Tessor/x/epochs/types"
+	icacallbackstypes "github.com/TessorNetwork/Tessor/x/icacallbacks/types"
+	recordstypes "github.com/TessorNetwork/Tessor/x/records/types"
+	stakeibctypes "github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 type TestDepositRecords struct {

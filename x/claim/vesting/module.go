@@ -15,8 +15,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
 
-	"github.com/TessorNetwork/tessor/v4/x/claim/vesting/client/cli"
-	"github.com/TessorNetwork/tessor/v4/x/claim/vesting/types"
+	"github.com/TessorNetwork/Tessor/x/claim/vesting/client/cli"
+	"github.com/TessorNetwork/Tessor/x/claim/vesting/types"
 )
 
 var (

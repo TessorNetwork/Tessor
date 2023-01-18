@@ -4,7 +4,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/TessorNetwork/tessor/v4/utils"
+	"github.com/TessorNetwork/Tessor/utils"
 )
 
 const TypeMsgClaimUndelegatedTokens = "claim_undelegated_tokens"

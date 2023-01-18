@@ -5,7 +5,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 
-	"github.com/TessorNetwork/tessor/v4/x/claim/vesting/types"
+	"github.com/TessorNetwork/Tessor/x/claim/vesting/types"
 )
 
 // GetTxCmd returns tessor vesting module's transaction commands.

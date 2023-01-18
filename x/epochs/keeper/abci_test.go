@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/TessorNetwork/tessor/v4/x/epochs"
-	"github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	"github.com/TessorNetwork/Tessor/x/epochs"
+	"github.com/TessorNetwork/Tessor/x/epochs/types"
 )
 
 func (suite *KeeperTestSuite) TestEpochInfoChangesBeginBlockerAndInitGenesis() {

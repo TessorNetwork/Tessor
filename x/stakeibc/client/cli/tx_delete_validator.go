@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	"github.com/spf13/cobra"
 
-	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/Tessor/x/stakeibc/types"
 )
 
 func CmdDeleteValidator() *cobra.Command {

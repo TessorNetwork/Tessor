@@ -24,5 +24,5 @@ cd ..
 # move proto files to the right places
 #
 # Note: Proto files are suffixed with the current binary version.
-cp -r github.com/TessorNetwork/tessor/v4/* ./
+cp -r github.com/TessorNetwork/Tessor/* ./
 rm -rf github.com
