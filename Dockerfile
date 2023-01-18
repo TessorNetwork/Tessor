@@ -23,20 +23,20 @@ RUN LINK_STATICALLY=true make build
 # Add to a distroless container
 FROM ${RUNNER_IMAGE}
 
-COPY --from=builder /opt/build/strided /usr/local/bin/strided
+COPY --from=builder /opt/build/tessord /usr/local/bin/tessord
 RUN apk add bash vim sudo dasel \
-    && addgroup -g 1000 stride \
-    && adduser -S -h /home/stride -D stride -u 1000 -G stride 
+    && addgroup -g 1000 tessor \
+    && adduser -S -h /home/tessor -D tessor -u 1000 -G tessor 
 
 RUN mkdir -p /etc/sudoers.d \
     && echo '%wheel ALL=(ALL) ALL' > /etc/sudoers.d/wheel \
     && echo "%wheel ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers \
-    && adduser stride wheel 
+    && adduser tessor wheel 
 
 USER 1000
-ENV HOME /home/stride
+ENV HOME /home/tessor
 WORKDIR $HOME
 
 EXPOSE 26657 26656 1317 9090
 
-CMD ["strided", "start"]
+CMD ["tessord", "start"]

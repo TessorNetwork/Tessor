@@ -28795,7 +28795,7 @@ paths:
   /interchainquery/tx/v1beta1/submitquery:
     post:
       summary: SubmitQueryResponse defines a method for submit query responses.
-      operationId: StrideInterchainquerySubmitQueryResponse
+      operationId: TessorInterchainquerySubmitQueryResponse
       responses:
         '200':
           description: A successful response.
@@ -28879,7 +28879,7 @@ paths:
   /mint/v1beta1/epoch_provisions:
     get:
       summary: EpochProvisions current minting epoch provisions value.
-      operationId: StrideMintV1Beta1EpochProvisions
+      operationId: TessorMintV1Beta1EpochProvisions
       responses:
         '200':
           description: A successful response.
@@ -29085,7 +29085,7 @@ paths:
   /mint/v1beta1/params:
     get:
       summary: Params returns the total set of minting parameters.
-      operationId: StrideMintV1Beta1Params
+      operationId: TessorMintV1Beta1Params
       responses:
         '200':
           description: A successful response.
@@ -29341,10 +29341,10 @@ paths:
                         }
       tags:
         - Query
-  /Stridelabs/stride/epochs:
+  /Tessornetwork/tessor/epochs:
     get:
       summary: EpochInfos provide running epochInfos
-      operationId: StridelabsStrideEpochsEpochInfos
+      operationId: TessornetworkTessorEpochsEpochInfos
       responses:
         '200':
           description: A successful response.
@@ -29475,10 +29475,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /Stridelabs/stride/epochs/current_epoch:
+  /Tessornetwork/tessor/epochs/current_epoch:
     get:
       summary: CurrentEpoch provide current epoch of specified identifier
-      operationId: StridelabsStrideEpochsCurrentEpoch
+      operationId: TessornetworkTessorEpochsCurrentEpoch
       responses:
         '200':
           description: A successful response.
@@ -29513,10 +29513,10 @@ paths:
           type: string
       tags:
         - Query
-  /Stridelabs/stride/epochs/epoch_info:
+  /Tessornetwork/tessor/epochs/epoch_info:
     get:
       summary: CurrentEpoch provide current epoch of specified identifier
-      operationId: StridelabsStrideEpochsEpochInfo
+      operationId: TessornetworkTessorEpochsEpochInfo
       responses:
         '200':
           description: A successful response.
@@ -29569,10 +29569,10 @@ paths:
           type: string
       tags:
         - Query
-  /Stride-Labs/stride/icacallbacks/callback_data:
+  /TessorNetwork/tessor/icacallbacks/callback_data:
     get:
       summary: Queries a list of CallbackData items.
-      operationId: StridelabsStrideIcacallbacksCallbackDataAll
+      operationId: TessornetworkTessorIcacallbacksCallbackDataAll
       responses:
         '200':
           description: A successful response.
@@ -29699,10 +29699,10 @@ paths:
           type: boolean
       tags:
         - Query
-  '/Stride-Labs/stride/icacallbacks/callback_data/{callbackKey}':
+  '/TessorNetwork/tessor/icacallbacks/callback_data/{callbackKey}':
     get:
       summary: Queries a CallbackData by index.
-      operationId: StridelabsStrideIcacallbacksCallbackData
+      operationId: TessornetworkTessorIcacallbacksCallbackData
       responses:
         '200':
           description: A successful response.
@@ -29751,10 +29751,10 @@ paths:
           type: string
       tags:
         - Query
-  /Stride-Labs/stride/icacallbacks/params:
+  /TessorNetwork/tessor/icacallbacks/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StridelabsStrideIcacallbacksParams
+      operationId: TessornetworkTessorIcacallbacksParams
       responses:
         '200':
           description: A successful response.
@@ -29787,10 +29787,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /Stride-Labs/stride/records/deposit_record:
+  /TessorNetwork/tessor/records/deposit_record:
     get:
       summary: Queries a list of DepositRecord items.
-      operationId: StridelabsStrideRecordsDepositRecordAll
+      operationId: TessornetworkTessorRecordsDepositRecordAll
       responses:
         '200':
           description: A successful response.
@@ -29827,9 +29827,9 @@ paths:
                     source:
                       type: string
                       enum:
-                        - STRIDE
+                        - TESSOR
                         - WITHDRAWAL_ICA
-                      default: STRIDE
+                      default: TESSOR
               pagination:
                 type: object
                 properties:
@@ -29931,10 +29931,10 @@ paths:
           type: boolean
       tags:
         - Query
-  '/Stride-Labs/stride/records/deposit_record/{id}':
+  '/TessorNetwork/tessor/records/deposit_record/{id}':
     get:
       summary: Queries a DepositRecord by id.
-      operationId: StridelabsStrideRecordsDepositRecord
+      operationId: TessornetworkTessorRecordsDepositRecord
       responses:
         '200':
           description: A successful response.
@@ -29969,9 +29969,9 @@ paths:
                   source:
                     type: string
                     enum:
-                      - STRIDE
+                      - TESSOR
                       - WITHDRAWAL_ICA
-                    default: STRIDE
+                    default: TESSOR
         default:
           description: An unexpected error response.
           schema:
@@ -29998,10 +29998,10 @@ paths:
           format: uint64
       tags:
         - Query
-  /Stride-Labs/stride/records/epoch_unbonding_record:
+  /TessorNetwork/tessor/records/epoch_unbonding_record:
     get:
       summary: Queries a list of EpochUnbondingRecord items.
-      operationId: StridelabsStrideRecordsEpochUnbondingRecordAll
+      operationId: TessornetworkTessorRecordsEpochUnbondingRecordAll
       responses:
         '200':
           description: A successful response.
@@ -30150,10 +30150,10 @@ paths:
           type: boolean
       tags:
         - Query
-  '/Stride-Labs/stride/records/epoch_unbonding_record/{epochNumber}':
+  '/TessorNetwork/tessor/records/epoch_unbonding_record/{epochNumber}':
     get:
       summary: Queries a EpochUnbondingRecord by id.
-      operationId: StridelabsStrideRecordsEpochUnbondingRecord
+      operationId: TessornetworkTessorRecordsEpochUnbondingRecord
       responses:
         '200':
           description: A successful response.
@@ -30225,10 +30225,10 @@ paths:
           format: uint64
       tags:
         - Query
-  /Stride-Labs/stride/records/user_redemption_record:
+  /TessorNetwork/tessor/records/user_redemption_record:
     get:
       summary: Queries a list of UserRedemptionRecord items.
-      operationId: StridelabsStrideRecordsUserRedemptionRecordAll
+      operationId: TessornetworkTessorRecordsUserRedemptionRecordAll
       responses:
         '200':
           description: A successful response.
@@ -30359,10 +30359,10 @@ paths:
           type: boolean
       tags:
         - Query
-  '/Stride-Labs/stride/records/user_redemption_record/{id}':
+  '/TessorNetwork/tessor/records/user_redemption_record/{id}':
     get:
       summary: Queries a UserRedemptionRecord by id.
-      operationId: StridelabsStrideRecordsUserRedemptionRecord
+      operationId: TessornetworkTessorRecordsUserRedemptionRecord
       responses:
         '200':
           description: A successful response.
@@ -30415,10 +30415,10 @@ paths:
           type: string
       tags:
         - Query
-  '/Stride-Labs/stride/records/user_redemption_record_for_user/{chainId}/{day}/{address}/{limit}':
+  '/TessorNetwork/tessor/records/user_redemption_record_for_user/{chainId}/{day}/{address}/{limit}':
     get:
       summary: Queries a list of UserRedemptionRecord items by chainId / userId pair.
-      operationId: StridelabsStrideRecordsUserRedemptionRecordForUser
+      operationId: TessornetworkTessorRecordsUserRedemptionRecordForUser
       responses:
         '200':
           description: A successful response.
@@ -30567,10 +30567,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /StrideLabs/stride/records/params:
+  /TessorLabs/tessor/records/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StridelabsStrideRecordsParams
+      operationId: TessornetworkTessorRecordsParams
       responses:
         '200':
           description: A successful response.
@@ -30603,10 +30603,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /Stride-Labs/stride/stakeibc/epoch_tracker:
+  /TessorNetwork/tessor/stakeibc/epoch_tracker:
     get:
       summary: Queries a list of EpochTracker items.
-      operationId: StridelabsStrideStakeibcEpochTrackerAll
+      operationId: TessornetworkTessorStakeibcEpochTrackerAll
       responses:
         '200':
           description: A successful response.
@@ -30897,10 +30897,10 @@ paths:
           type: boolean
       tags:
         - Query
-  '/Stride-Labs/stride/stakeibc/epoch_tracker/{epochIdentifier}':
+  '/TessorNetwork/tessor/stakeibc/epoch_tracker/{epochIdentifier}':
     get:
       summary: Queries a EpochTracker by index.
-      operationId: StridelabsStrideStakeibcEpochTracker
+      operationId: TessornetworkTessorStakeibcEpochTracker
       responses:
         '200':
           description: A successful response.
@@ -31113,10 +31113,10 @@ paths:
           type: string
       tags:
         - Query
-  /Stride-Labs/stride/stakeibc/host_zone:
+  /TessorNetwork/tessor/stakeibc/host_zone:
     get:
       summary: Queries a list of HostZone items.
-      operationId: StridelabsStrideStakeibcHostZoneAll
+      operationId: TessornetworkTessorStakeibcHostZoneAll
       responses:
         '200':
           description: A successful response.
@@ -31430,7 +31430,7 @@ paths:
                         directly)
                     IBCDenom:
                       type: string
-                      title: ibc denom on stride
+                      title: ibc denom on tessor
                     HostDenom:
                       type: string
                       title: native denom on host zone
@@ -31724,10 +31724,10 @@ paths:
           type: boolean
       tags:
         - Query
-  '/Stride-Labs/stride/stakeibc/host_zone/{chain_id}':
+  '/TessorNetwork/tessor/stakeibc/host_zone/{chain_id}':
     get:
       summary: Queries a HostZone by id.
-      operationId: StridelabsStrideStakeibcHostZone
+      operationId: TessornetworkTessorStakeibcHostZone
       responses:
         '200':
           description: A successful response.
@@ -32035,7 +32035,7 @@ paths:
                       balances should be coins, maybe store port name directly)
                   IBCDenom:
                     type: string
-                    title: ibc denom on stride
+                    title: ibc denom on tessor
                   HostDenom:
                     type: string
                     title: native denom on host zone
@@ -32253,10 +32253,10 @@ paths:
           type: string
       tags:
         - Query
-  /Stride-Labs/stride/stakeibc/ica_account:
+  /TessorNetwork/tessor/stakeibc/ica_account:
     get:
       summary: Queries a ICAAccount by index.
-      operationId: StridelabsStrideStakeibcICAAccount
+      operationId: TessornetworkTessorStakeibcICAAccount
       responses:
         '200':
           description: A successful response.
@@ -32506,10 +32506,10 @@ paths:
                         }
       tags:
         - Query
-  '/Stride-Labs/stride/stakeibc/module_address/{name}':
+  '/TessorNetwork/tessor/stakeibc/module_address/{name}':
     get:
       summary: Queries a list of ModuleAddress items.
-      operationId: StridelabsStrideStakeibcModuleAddress
+      operationId: TessornetworkTessorStakeibcModuleAddress
       responses:
         '200':
           description: A successful response.
@@ -32710,10 +32710,10 @@ paths:
           type: string
       tags:
         - Query
-  '/Stride-Labs/stride/stakeibc/validators/{chain_id}':
+  '/TessorNetwork/tessor/stakeibc/validators/{chain_id}':
     get:
       summary: Queries a Validator by host zone.
-      operationId: StridelabsStrideStakeibcValidators
+      operationId: TessornetworkTessorStakeibcValidators
       responses:
         '200':
           description: A successful response.
@@ -32944,10 +32944,10 @@ paths:
           type: string
       tags:
         - Query
-  /Stridelabs/stride/stakeibc/params:
+  /Tessornetwork/tessor/stakeibc/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StridelabsStrideStakeibcParams
+      operationId: TessornetworkTessorStakeibcParams
       responses:
         '200':
           description: A successful response.
@@ -32961,7 +32961,7 @@ paths:
                   rewards_interval:
                     type: string
                     format: uint64
-                    title: 'define epoch lengths, in stride_epochs'
+                    title: 'define epoch lengths, in tessor_epochs'
                   delegate_interval:
                     type: string
                     format: uint64
@@ -32971,7 +32971,7 @@ paths:
                   redemption_rate_interval:
                     type: string
                     format: uint64
-                  stride_commission:
+                  tessor_commission:
                     type: string
                     format: uint64
                   zone_com_address:
@@ -32980,7 +32980,7 @@ paths:
                       type: string
                     title: |-
                       zone_com_address stores which addresses to 
-                      send the Stride commission too, as well as what portion
+                      send the Tessor commission too, as well as what portion
                       of the fee each address is entitled to
                       TODO implement this
                   reinvest_interval:
@@ -53332,7 +53332,7 @@ definitions:
     description: |-
       Version defines the versioning scheme used to negotiate the IBC verison in
       the connection handshake.
-  stride.interchainquery.MsgSubmitQueryResponse:
+  tessor.interchainquery.MsgSubmitQueryResponse:
     type: object
     properties:
       chain_id:
@@ -53371,7 +53371,7 @@ definitions:
     description: >-
       MsgSubmitQueryResponse represents a message type to fulfil a query
       request.
-  stride.interchainquery.MsgSubmitQueryResponseResponse:
+  tessor.interchainquery.MsgSubmitQueryResponseResponse:
     type: object
     description: |-
       MsgSubmitQueryResponseResponse defines the MsgSubmitQueryResponse response
@@ -53412,7 +53412,7 @@ definitions:
             The data could be arbitrary format, providing nessecary data
             for example neighbouring node hash
     title: ProofOps is Merkle proof defined by the list of ProofOps
-  stride.mint.v1beta1.DistributionProportions:
+  tessor.mint.v1beta1.DistributionProportions:
     type: object
     properties:
       staking:
@@ -53440,7 +53440,7 @@ definitions:
 
           to be allocated to the pool: strategic reserve.
     title: 'next id: 5'
-  stride.mint.v1beta1.Params:
+  tessor.mint.v1beta1.Params:
     type: object
     properties:
       mint_denom:
@@ -53496,7 +53496,7 @@ definitions:
         format: int64
         title: start epoch to distribute minting rewards
     description: Params holds parameters for the mint module.
-  stride.mint.v1beta1.QueryEpochProvisionsResponse:
+  tessor.mint.v1beta1.QueryEpochProvisionsResponse:
     type: object
     properties:
       epoch_provisions:
@@ -53506,7 +53506,7 @@ definitions:
     description: |-
       QueryEpochProvisionsResponse is the response type for the
       Query/EpochProvisions RPC method.
-  stride.mint.v1beta1.QueryParamsResponse:
+  tessor.mint.v1beta1.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -53568,7 +53568,7 @@ definitions:
             format: int64
             title: start epoch to distribute minting rewards
     description: QueryParamsResponse is the response type for the Query/Params RPC method.
-  Stridelabs.stride.epochs.EpochInfo:
+  Tessornetwork.tessor.epochs.EpochInfo:
     type: object
     properties:
       identifier:
@@ -53589,13 +53589,13 @@ definitions:
       current_epoch_start_height:
         type: string
         format: int64
-  Stridelabs.stride.epochs.QueryCurrentEpochResponse:
+  Tessornetwork.tessor.epochs.QueryCurrentEpochResponse:
     type: object
     properties:
       current_epoch:
         type: string
         format: int64
-  Stridelabs.stride.epochs.QueryEpochInfoResponse:
+  Tessornetwork.tessor.epochs.QueryEpochInfoResponse:
     type: object
     properties:
       epoch:
@@ -53619,7 +53619,7 @@ definitions:
           current_epoch_start_height:
             type: string
             format: int64
-  Stridelabs.stride.epochs.QueryEpochsInfoResponse:
+  Tessornetwork.tessor.epochs.QueryEpochsInfoResponse:
     type: object
     properties:
       epochs:
@@ -53670,7 +53670,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  stridelabs.stride.icacallbacks.CallbackData:
+  tessorlabs.tessor.icacallbacks.CallbackData:
     type: object
     properties:
       callbackKey:
@@ -53687,10 +53687,10 @@ definitions:
       callbackArgs:
         type: string
         format: byte
-  stridelabs.stride.icacallbacks.Params:
+  tessorlabs.tessor.icacallbacks.Params:
     type: object
     description: Params defines the parameters for the module.
-  stridelabs.stride.icacallbacks.QueryAllCallbackDataResponse:
+  tessorlabs.tessor.icacallbacks.QueryAllCallbackDataResponse:
     type: object
     properties:
       callbackData:
@@ -53737,7 +53737,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  stridelabs.stride.icacallbacks.QueryGetCallbackDataResponse:
+  tessorlabs.tessor.icacallbacks.QueryGetCallbackDataResponse:
     type: object
     properties:
       callbackData:
@@ -53757,14 +53757,14 @@ definitions:
           callbackArgs:
             type: string
             format: byte
-  stridelabs.stride.icacallbacks.QueryParamsResponse:
+  tessorlabs.tessor.icacallbacks.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  Stridelabs.stride.records.DepositRecord:
+  Tessornetwork.tessor.records.DepositRecord:
     type: object
     properties:
       id:
@@ -53792,16 +53792,16 @@ definitions:
       source:
         type: string
         enum:
-          - STRIDE
+          - TESSOR
           - WITHDRAWAL_ICA
-        default: STRIDE
-  Stridelabs.stride.records.DepositRecord.Source:
+        default: TESSOR
+  Tessornetwork.tessor.records.DepositRecord.Source:
     type: string
     enum:
-      - STRIDE
+      - TESSOR
       - WITHDRAWAL_ICA
-    default: STRIDE
-  Stridelabs.stride.records.DepositRecord.Status:
+    default: TESSOR
+  Tessornetwork.tessor.records.DepositRecord.Status:
     type: string
     enum:
       - TRANSFER
@@ -53810,7 +53810,7 @@ definitions:
     title: |-
       - TRANSFER: pending transfer to delegate account
        - STAKE: pending staking on delegate account
-  Stridelabs.stride.records.EpochUnbondingRecord:
+  Tessornetwork.tessor.records.EpochUnbondingRecord:
     type: object
     properties:
       epochNumber:
@@ -53849,7 +53849,7 @@ definitions:
               type: array
               items:
                 type: string
-  Stridelabs.stride.records.HostZoneUnbonding:
+  Tessornetwork.tessor.records.HostZoneUnbonding:
     type: object
     properties:
       stTokenAmount:
@@ -53880,7 +53880,7 @@ definitions:
         type: array
         items:
           type: string
-  Stridelabs.stride.records.HostZoneUnbonding.Status:
+  Tessornetwork.tessor.records.HostZoneUnbonding.Status:
     type: string
     enum:
       - BONDED
@@ -53891,10 +53891,10 @@ definitions:
       - BONDED: tokens bonded on delegate account
        - UNBONDED: unbonding completed on delegate account
        - TRANSFERRED: transfer success
-  Stridelabs.stride.records.Params:
+  Tessornetwork.tessor.records.Params:
     type: object
     description: Params defines the parameters for the module.
-  Stridelabs.stride.records.QueryAllDepositRecordResponse:
+  Tessornetwork.tessor.records.QueryAllDepositRecordResponse:
     type: object
     properties:
       DepositRecord:
@@ -53927,9 +53927,9 @@ definitions:
             source:
               type: string
               enum:
-                - STRIDE
+                - TESSOR
                 - WITHDRAWAL_ICA
-              default: STRIDE
+              default: TESSOR
       pagination:
         type: object
         properties:
@@ -53955,7 +53955,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  Stridelabs.stride.records.QueryAllEpochUnbondingRecordResponse:
+  Tessornetwork.tessor.records.QueryAllEpochUnbondingRecordResponse:
     type: object
     properties:
       EpochUnbondingRecord:
@@ -54024,7 +54024,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  Stridelabs.stride.records.QueryAllUserRedemptionRecordForUserResponse:
+  Tessornetwork.tessor.records.QueryAllUserRedemptionRecordForUserResponse:
     type: object
     properties:
       UserRedemptionRecord:
@@ -54075,7 +54075,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  Stridelabs.stride.records.QueryAllUserRedemptionRecordResponse:
+  Tessornetwork.tessor.records.QueryAllUserRedemptionRecordResponse:
     type: object
     properties:
       UserRedemptionRecord:
@@ -54126,7 +54126,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  Stridelabs.stride.records.QueryGetDepositRecordResponse:
+  Tessornetwork.tessor.records.QueryGetDepositRecordResponse:
     type: object
     properties:
       DepositRecord:
@@ -54157,10 +54157,10 @@ definitions:
           source:
             type: string
             enum:
-              - STRIDE
+              - TESSOR
               - WITHDRAWAL_ICA
-            default: STRIDE
-  Stridelabs.stride.records.QueryGetEpochUnbondingRecordResponse:
+            default: TESSOR
+  Tessornetwork.tessor.records.QueryGetEpochUnbondingRecordResponse:
     type: object
     properties:
       EpochUnbondingRecord:
@@ -54202,7 +54202,7 @@ definitions:
                   type: array
                   items:
                     type: string
-  Stridelabs.stride.records.QueryGetUserRedemptionRecordResponse:
+  Tessornetwork.tessor.records.QueryGetUserRedemptionRecordResponse:
     type: object
     properties:
       UserRedemptionRecord:
@@ -54226,14 +54226,14 @@ definitions:
             format: uint64
           claimIsPending:
             type: boolean
-  Stridelabs.stride.records.QueryParamsResponse:
+  Tessornetwork.tessor.records.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  Stridelabs.stride.records.UserRedemptionRecord:
+  Tessornetwork.tessor.records.UserRedemptionRecord:
     type: object
     properties:
       id:
@@ -54254,7 +54254,7 @@ definitions:
         format: uint64
       claimIsPending:
         type: boolean
-  Stridelabs.stride.stakeibc.Delegation:
+  Tessornetwork.tessor.stakeibc.Delegation:
     type: object
     properties:
       delegateAcctAddress:
@@ -54292,7 +54292,7 @@ definitions:
       amt:
         type: string
         format: int64
-  Stridelabs.stride.stakeibc.EpochTracker:
+  Tessornetwork.tessor.stakeibc.EpochTracker:
     type: object
     properties:
       epochIdentifier:
@@ -54306,7 +54306,7 @@ definitions:
       duration:
         type: string
         format: uint64
-  Stridelabs.stride.stakeibc.HostZone:
+  Tessornetwork.tessor.stakeibc.HostZone:
     type: object
     properties:
       chainId:
@@ -54607,7 +54607,7 @@ definitions:
           should be coins, maybe store port name directly)
       IBCDenom:
         type: string
-        title: ibc denom on stride
+        title: ibc denom on tessor
       HostDenom:
         type: string
         title: native denom on host zone
@@ -54631,7 +54631,7 @@ definitions:
       address:
         type: string
     title: 'next id: 19'
-  Stridelabs.stride.stakeibc.ICAAccount:
+  Tessornetwork.tessor.stakeibc.ICAAccount:
     type: object
     properties:
       address:
@@ -54687,7 +54687,7 @@ definitions:
     title: >-
       TODO(TEST-XX): Update these fields to be more useful (e.g. balances should
       be coins, maybe store port name directly)
-  Stridelabs.stride.stakeibc.ICAAccountType:
+  Tessornetwork.tessor.stakeibc.ICAAccountType:
     type: string
     enum:
       - DELEGATION
@@ -54695,38 +54695,38 @@ definitions:
       - WITHDRAWAL
       - REDEMPTION
     default: DELEGATION
-  Stridelabs.stride.stakeibc.MsgAddValidatorResponse:
+  Tessornetwork.tessor.stakeibc.MsgAddValidatorResponse:
     type: object
-  Stridelabs.stride.stakeibc.MsgChangeValidatorWeightResponse:
+  Tessornetwork.tessor.stakeibc.MsgChangeValidatorWeightResponse:
     type: object
-  Stridelabs.stride.stakeibc.MsgClaimUndelegatedTokensResponse:
+  Tessornetwork.tessor.stakeibc.MsgClaimUndelegatedTokensResponse:
     type: object
-  Stridelabs.stride.stakeibc.MsgClearBalanceResponse:
+  Tessornetwork.tessor.stakeibc.MsgClearBalanceResponse:
     type: object
-  Stridelabs.stride.stakeibc.MsgDeleteValidatorResponse:
+  Tessornetwork.tessor.stakeibc.MsgDeleteValidatorResponse:
     type: object
-  Stridelabs.stride.stakeibc.MsgLiquidStakeResponse:
+  Tessornetwork.tessor.stakeibc.MsgLiquidStakeResponse:
     type: object
-  Stridelabs.stride.stakeibc.MsgRebalanceValidatorsResponse:
+  Tessornetwork.tessor.stakeibc.MsgRebalanceValidatorsResponse:
     type: object
-  Stridelabs.stride.stakeibc.MsgRedeemStakeResponse:
+  Tessornetwork.tessor.stakeibc.MsgRedeemStakeResponse:
     type: object
-  Stridelabs.stride.stakeibc.MsgRegisterHostZoneResponse:
+  Tessornetwork.tessor.stakeibc.MsgRegisterHostZoneResponse:
     type: object
     title: >-
       TODO(TEST-53): Remove this pre-launch (no need for clients to create /
       interact with ICAs)
-  Stridelabs.stride.stakeibc.MsgRestoreInterchainAccountResponse:
+  Tessornetwork.tessor.stakeibc.MsgRestoreInterchainAccountResponse:
     type: object
-  Stridelabs.stride.stakeibc.MsgUpdateValidatorSharesExchRateResponse:
+  Tessornetwork.tessor.stakeibc.MsgUpdateValidatorSharesExchRateResponse:
     type: object
-  Stridelabs.stride.stakeibc.Params:
+  Tessornetwork.tessor.stakeibc.Params:
     type: object
     properties:
       rewards_interval:
         type: string
         format: uint64
-        title: 'define epoch lengths, in stride_epochs'
+        title: 'define epoch lengths, in tessor_epochs'
       delegate_interval:
         type: string
         format: uint64
@@ -54736,7 +54736,7 @@ definitions:
       redemption_rate_interval:
         type: string
         format: uint64
-      stride_commission:
+      tessor_commission:
         type: string
         format: uint64
       zone_com_address:
@@ -54745,7 +54745,7 @@ definitions:
           type: string
         title: |-
           zone_com_address stores which addresses to 
-          send the Stride commission too, as well as what portion
+          send the Tessor commission too, as well as what portion
           of the fee each address is entitled to
           TODO implement this
       reinvest_interval:
@@ -54781,7 +54781,7 @@ definitions:
     title: |-
       Params defines the parameters for the module.
       next id: 16
-  Stridelabs.stride.stakeibc.QueryAllEpochTrackerResponse:
+  Tessornetwork.tessor.stakeibc.QueryAllEpochTrackerResponse:
     type: object
     properties:
       epochTracker:
@@ -54825,7 +54825,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  Stridelabs.stride.stakeibc.QueryAllHostZoneResponse:
+  Tessornetwork.tessor.stakeibc.QueryAllHostZoneResponse:
     type: object
     properties:
       HostZone:
@@ -55131,7 +55131,7 @@ definitions:
                 balances should be coins, maybe store port name directly)
             IBCDenom:
               type: string
-              title: ibc denom on stride
+              title: ibc denom on tessor
             HostDenom:
               type: string
               title: native denom on host zone
@@ -55180,7 +55180,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  Stridelabs.stride.stakeibc.QueryGetEpochTrackerResponse:
+  Tessornetwork.tessor.stakeibc.QueryGetEpochTrackerResponse:
     type: object
     properties:
       epochTracker:
@@ -55197,7 +55197,7 @@ definitions:
           duration:
             type: string
             format: uint64
-  Stridelabs.stride.stakeibc.QueryGetHostZoneResponse:
+  Tessornetwork.tessor.stakeibc.QueryGetHostZoneResponse:
     type: object
     properties:
       HostZone:
@@ -55501,7 +55501,7 @@ definitions:
               balances should be coins, maybe store port name directly)
           IBCDenom:
             type: string
-            title: ibc denom on stride
+            title: ibc denom on tessor
           HostDenom:
             type: string
             title: native denom on host zone
@@ -55525,7 +55525,7 @@ definitions:
           address:
             type: string
         title: 'next id: 19'
-  Stridelabs.stride.stakeibc.QueryGetICAAccountResponse:
+  Tessornetwork.tessor.stakeibc.QueryGetICAAccountResponse:
     type: object
     properties:
       ICAAccount:
@@ -55584,7 +55584,7 @@ definitions:
         title: >-
           TODO(TEST-XX): Update these fields to be more useful (e.g. balances
           should be coins, maybe store port name directly)
-  Stridelabs.stride.stakeibc.QueryGetValidatorsResponse:
+  Tessornetwork.tessor.stakeibc.QueryGetValidatorsResponse:
     type: object
     properties:
       validators:
@@ -55619,7 +55619,7 @@ definitions:
                 epochNumber:
                   type: string
                   format: uint64
-  Stridelabs.stride.stakeibc.QueryInterchainAccountFromAddressResponse:
+  Tessornetwork.tessor.stakeibc.QueryInterchainAccountFromAddressResponse:
     type: object
     properties:
       interchain_account_address:
@@ -55627,12 +55627,12 @@ definitions:
     title: >-
       QueryInterchainAccountFromAddressResponse the response type for the
       Query/InterchainAccountAddress RPC
-  Stridelabs.stride.stakeibc.QueryModuleAddressResponse:
+  Tessornetwork.tessor.stakeibc.QueryModuleAddressResponse:
     type: object
     properties:
       addr:
         type: string
-  Stridelabs.stride.stakeibc.QueryParamsResponse:
+  Tessornetwork.tessor.stakeibc.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -55642,7 +55642,7 @@ definitions:
           rewards_interval:
             type: string
             format: uint64
-            title: 'define epoch lengths, in stride_epochs'
+            title: 'define epoch lengths, in tessor_epochs'
           delegate_interval:
             type: string
             format: uint64
@@ -55652,7 +55652,7 @@ definitions:
           redemption_rate_interval:
             type: string
             format: uint64
-          stride_commission:
+          tessor_commission:
             type: string
             format: uint64
           zone_com_address:
@@ -55661,7 +55661,7 @@ definitions:
               type: string
             title: |-
               zone_com_address stores which addresses to 
-              send the Stride commission too, as well as what portion
+              send the Tessor commission too, as well as what portion
               of the fee each address is entitled to
               TODO implement this
           reinvest_interval:
@@ -55698,7 +55698,7 @@ definitions:
           Params defines the parameters for the module.
           next id: 16
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  Stridelabs.stride.stakeibc.Validator:
+  Tessornetwork.tessor.stakeibc.Validator:
     type: object
     properties:
       name:
@@ -55728,13 +55728,13 @@ definitions:
           epochNumber:
             type: string
             format: uint64
-  Stridelabs.stride.stakeibc.Validator.ValidatorStatus:
+  Tessornetwork.tessor.stakeibc.Validator.ValidatorStatus:
     type: string
     enum:
       - Active
       - Inactive
     default: Active
-  Stridelabs.stride.stakeibc.ValidatorExchangeRate:
+  Tessornetwork.tessor.stakeibc.ValidatorExchangeRate:
     type: object
     properties:
       internalTokensToSharesRate:

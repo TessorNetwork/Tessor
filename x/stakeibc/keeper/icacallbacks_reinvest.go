@@ -3,11 +3,11 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/Stride-Labs/stride/v4/utils"
-	epochtypes "github.com/Stride-Labs/stride/v4/x/epochs/types"
-	icacallbackstypes "github.com/Stride-Labs/stride/v4/x/icacallbacks/types"
-	recordstypes "github.com/Stride-Labs/stride/v4/x/records/types"
-	"github.com/Stride-Labs/stride/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/tessor/v4/utils"
+	epochtypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	icacallbackstypes "github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
+	recordstypes "github.com/TessorNetwork/tessor/v4/x/records/types"
+	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
@@ -68,11 +68,11 @@ func ReinvestCallback(k Keeper, ctx sdk.Context, packet channeltypes.Packet, ack
 	k.Logger(ctx).Info(utils.LogICACallbackStatusWithHostZone(chainId, ICACallbackID_Reinvest,
 		icacallbackstypes.AckResponseStatus_SUCCESS, packet))
 
-	// Get the current stride epoch number
-	strideEpochTracker, found := k.GetEpochTracker(ctx, epochtypes.STRIDE_EPOCH)
+	// Get the current tessor epoch number
+	tessorEpochTracker, found := k.GetEpochTracker(ctx, epochtypes.TESSOR_EPOCH)
 	if !found {
 		k.Logger(ctx).Error("failed to find epoch")
-		return sdkerrors.Wrapf(types.ErrInvalidLengthEpochTracker, "no number for epoch (%s)", epochtypes.STRIDE_EPOCH)
+		return sdkerrors.Wrapf(types.ErrInvalidLengthEpochTracker, "no number for epoch (%s)", epochtypes.TESSOR_EPOCH)
 	}
 
 	// Create a new deposit record so that rewards are reinvested
@@ -82,7 +82,7 @@ func ReinvestCallback(k Keeper, ctx sdk.Context, packet channeltypes.Packet, ack
 		HostZoneId:         reinvestCallback.HostZoneId,
 		Status:             recordstypes.DepositRecord_DELEGATION_QUEUE,
 		Source:             recordstypes.DepositRecord_WITHDRAWAL_ICA,
-		DepositEpochNumber: strideEpochTracker.EpochNumber,
+		DepositEpochNumber: tessorEpochTracker.EpochNumber,
 	}
 	k.RecordsKeeper.AppendDepositRecord(ctx, record)
 

@@ -18,9 +18,9 @@ ADDRESS_PREFIX=$(GET_VAR_VALUE ${CHAIN}_ADDRESS_PREFIX)
 NUM_VALS=$(GET_VAR_VALUE       ${CHAIN}_NUM_NODES)
 
 echo "$CHAIN - Registering host zone..."
-$STRIDE_MAIN_CMD tx stakeibc register-host-zone \
+$TESSOR_MAIN_CMD tx stakeibc register-host-zone \
     $CONNECTION $HOST_DENOM $ADDRESS_PREFIX $IBC_DENOM $CHANNEL 1 \
-    --gas 1000000 --from $STRIDE_ADMIN_ACCT --home $DOCKERNET_HOME/state/stride1 -y | TRIM_TX
+    --gas 1000000 --from $TESSOR_ADMIN_ACCT --home $DOCKERNET_HOME/state/tessor1 -y | TRIM_TX
 sleep 10
 
 echo "$CHAIN - Registering validators..."
@@ -29,14 +29,14 @@ for (( i=1; i <= $NUM_VALS; i++ )); do
     delegate_val=$(GET_VAL_ADDR $CHAIN $i)
     weight=${weights[$i]}
 
-    $STRIDE_MAIN_CMD tx stakeibc add-validator $CHAIN_ID ${VAL_PREFIX}${i} $delegate_val 10 $weight \
-        --from $STRIDE_ADMIN_ACCT -y | TRIM_TX
+    $TESSOR_MAIN_CMD tx stakeibc add-validator $CHAIN_ID ${VAL_PREFIX}${i} $delegate_val 10 $weight \
+        --from $TESSOR_ADMIN_ACCT -y | TRIM_TX
     sleep 10
 done
 
 timeout=100
 while true; do
-    if ! $STRIDE_MAIN_CMD q stakeibc show-host-zone $CHAIN_ID | grep Account | grep -q null; then
+    if ! $TESSOR_MAIN_CMD q stakeibc show-host-zone $CHAIN_ID | grep Account | grep -q null; then
         break
     else
         if [[ "$timeout" == "0" ]]; then 

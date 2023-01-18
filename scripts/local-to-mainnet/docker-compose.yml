@@ -1,24 +1,24 @@
 version: "3"
 services:
-  stride1:
-    image: stridezone:stride
+  tessor1:
+    image: tessorzone:tessor
     volumes:
-      - ../state/stride1:/home/stride/.stride
+      - ../state/tessor1:/home/tessor/.tessor
     ports:
       - "26657:26657"
       - "1317:1317"
       - "9090:9090"
 
   hermes:
-    image: stridezone:hermes
+    image: tessorzone:hermes
     volumes:
       - ~/.hermes:/home/hermes/.hermes
       - ../state/hermes/config.toml:/home/hermes/.hermes/config.toml
     restart: always
 
   relayer:
-    image: stridezone:relayer
+    image: tessorzone:relayer
     volumes:
       - ../state/relayer:/home/relayer/.relayer
     restart: always
-    command: [ "bash", "start.sh", "stride-host" ]
+    command: [ "bash", "start.sh", "tessor-host" ]

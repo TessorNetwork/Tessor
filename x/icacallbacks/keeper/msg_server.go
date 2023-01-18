@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/Stride-Labs/stride/v4/x/icacallbacks/types"
+	"github.com/TessorNetwork/tessor/v4/x/icacallbacks/types"
 )
 
 type msgServer struct {

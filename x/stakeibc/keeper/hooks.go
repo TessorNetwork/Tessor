@@ -7,10 +7,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/spf13/cast"
 
-	"github.com/Stride-Labs/stride/v4/utils"
-	epochstypes "github.com/Stride-Labs/stride/v4/x/epochs/types"
-	recordstypes "github.com/Stride-Labs/stride/v4/x/records/types"
-	"github.com/Stride-Labs/stride/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/tessor/v4/utils"
+	epochstypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
+	recordstypes "github.com/TessorNetwork/tessor/v4/x/records/types"
+	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
 )
 
 func (k Keeper) BeforeEpochStart(ctx sdk.Context, epochInfo epochstypes.EpochInfo) {
@@ -33,8 +33,8 @@ func (k Keeper) BeforeEpochStart(ctx sdk.Context, epochInfo epochstypes.EpochInf
 		k.CreateEpochUnbondingRecord(ctx, epochNumber)
 	}
 
-	// Stride Epoch - Process Deposits and Delegations
-	if epochInfo.Identifier == epochstypes.STRIDE_EPOCH {
+	// Tessor Epoch - Process Deposits and Delegations
+	if epochInfo.Identifier == epochstypes.TESSOR_EPOCH {
 		// Get cadence intervals
 		redemptionRateInterval := k.GetParam(ctx, types.KeyRedemptionRateInterval)
 		depositInterval := k.GetParam(ctx, types.KeyDepositInterval)

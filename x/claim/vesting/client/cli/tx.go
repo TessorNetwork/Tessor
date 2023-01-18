@@ -5,14 +5,14 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 
-	"github.com/Stride-Labs/stride/v4/x/claim/vesting/types"
+	"github.com/TessorNetwork/tessor/v4/x/claim/vesting/types"
 )
 
-// GetTxCmd returns stride vesting module's transaction commands.
+// GetTxCmd returns tessor vesting module's transaction commands.
 func GetTxCmd() *cobra.Command {
 	txCmd := &cobra.Command{
 		Use:                        types.ModuleName,
-		Short:                      "Stride vesting transaction subcommands",
+		Short:                      "Tessor vesting transaction subcommands",
 		DisableFlagParsing:         true,
 		SuggestionsMinimumDistance: 2,
 		RunE:                       client.ValidateCmd,

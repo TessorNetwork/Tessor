@@ -1,10 +1,10 @@
-# Current IBC channels between Stride and other chains
+# Current IBC channels between Tessor and other chains
 
-IBC channels are added based on community consensus. Visit the [Stride Discord Server](https://discord.gg/stride-zone) and the [Stride Commonwealth forum](https://commonwealth.im/stride/discussions) to participate.
+IBC channels are added based on community consensus. Visit the [Tessor Discord Server](https://discord.gg/tessor-zone) and the [Tessor Commonwealth forum](https://commonwealth.im/tessor/discussions) to participate.
 
-If channel marked as `frozen`, please, visit [Stride Discord Server](https://discord.gg/stride-zone), and ask about further interactions with it in #general or #relayer-questions channels. It could be unfrozen via governance proposal.
+If channel marked as `frozen`, please, visit [Tessor Discord Server](https://discord.gg/tessor-zone), and ask about further interactions with it in #general or #relayer-questions channels. It could be unfrozen via governance proposal.
 
-| Chain Name | Chain ID | Token | 		Stride    | Foreign |
+| Chain Name | Chain ID | Token | 		Tessor    | Foreign |
 | ---------- | -------- | ----- | --------------- | ------- |
 | COSMOS | cosmoshub-4 | ATOM | Channel-0 (transfer) | Channel-391 |  
 | 	 	| 			 | 		 | Channel-7 (ica.delegation) | Channel-396 |  

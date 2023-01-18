@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+
+  tessor:
+    image: tessorzone:localtessor
+    build:
+      context: ../../../
+      args:
+        RUNNER_IMAGE: alpine:3.16
+        GO_VERSION: 1.19
+    volumes:
+      - ./scripts/start.sh:/home/tessor/start.sh
+      - ./scripts/testnetify.py:/home/tessor/testnetify.py
+      - ./state_export.json:/home/tessor/state_export.json
+      - $HOME/.tessor/:/home/tessor/.tessor/
+    entrypoint:
+      - /home/tessor/start.sh
+    environment:
+      - MONIKER=val
+      - CHAIN_ID=localtessor
+    ports:
+      - 26657:26657
+      - 1317:1317
+      - 9090:9090
+      - 9091:9091

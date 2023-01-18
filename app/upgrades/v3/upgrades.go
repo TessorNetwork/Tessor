@@ -7,21 +7,21 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	claimkeeper "github.com/Stride-Labs/stride/v4/x/claim/keeper"
-	claimtypes "github.com/Stride-Labs/stride/v4/x/claim/types"
+	claimkeeper "github.com/TessorNetwork/tessor/v4/x/claim/keeper"
+	claimtypes "github.com/TessorNetwork/tessor/v4/x/claim/types"
 )
 
 // Note: ensure these values are properly set before running upgrade
 var (
 	UpgradeName         = "v3"
 	airdropDistributors = []string{
-		"stride1cpvl8yf848karqauyhr5jzw6d9n9lnuuu974ev",
-		"stride1fmh0ysk5nt9y2cj8hddms5ffj2dhys55xkkjwz",
-		"stride1zlu2l3lx5tqvzspvjwsw9u0e907kelhqae3yhk",
-		"stride14k9g9zpgaycpey9840nnpa66l4nd6lu7g7t74c",
-		"stride12pum4adk5dhp32d90f8g8gfwujm0gwxqnrdlum",
+		"tessor1cpvl8yf848karqauyhr5jzw6d9n9lnuuu974ev",
+		"tessor1fmh0ysk5nt9y2cj8hddms5ffj2dhys55xkkjwz",
+		"tessor1zlu2l3lx5tqvzspvjwsw9u0e907kelhqae3yhk",
+		"tessor14k9g9zpgaycpey9840nnpa66l4nd6lu7g7t74c",
+		"tessor12pum4adk5dhp32d90f8g8gfwujm0gwxqnrdlum",
 	}
-	airdropIdentifiers = []string{"stride", "gaia", "osmosis", "juno", "stars"}
+	airdropIdentifiers = []string{"tessor", "gaia", "osmosis", "juno", "stars"}
 	airdropDuration    = time.Hour * 24 * 30 * 12 * 3 // 3 years
 )
 

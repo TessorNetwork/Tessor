@@ -4,16 +4,16 @@ global:
   memo: ""
   light-cache-size: 20
 chains:
-  stride:
+  tessor:
     type: cosmos
     value:
       key: rly1
-      chain-id: STRIDE
-      rpc-addr: http://stride1:26657
-      account-prefix: stride
+      chain-id: TESSOR
+      rpc-addr: http://tessor1:26657
+      account-prefix: tessor
       keyring-backend: test
       gas-adjustment: 1.2
-      gas-prices: 0.01ustrd
+      gas-prices: 0.01utess
       debug: false
       timeout: 20s
       output-format: json
@@ -80,7 +80,7 @@ chains:
       key: rly6
       chain-id: HOST
       rpc-addr: http://host1:26657
-      account-prefix: stride
+      account-prefix: tessor
       keyring-backend: test
       gas-adjustment: 1.2
       gas-prices: 0.01uwalk
@@ -104,49 +104,49 @@ chains:
   #     sign-mode: direct
 
 paths:
-  stride-gaia:
+  tessor-gaia:
     src:
-      chain-id: STRIDE
+      chain-id: TESSOR
     dst:
       chain-id: GAIA
     src-channel-filter:
       rule: ""
       channel-list: []
-  stride-osmo:
+  tessor-osmo:
     src:
-      chain-id: STRIDE
+      chain-id: TESSOR
     dst:
       chain-id: OSMO
     src-channel-filter:
       rule: ""
       channel-list: []
-  stride-juno:
+  tessor-juno:
     src:
-      chain-id: STRIDE
+      chain-id: TESSOR
     dst:
       chain-id: JUNO
     src-channel-filter:
       rule: ""
       channel-list: []
-  stride-stars:
+  tessor-stars:
     src:
-      chain-id: STRIDE
+      chain-id: TESSOR
     dst:
       chain-id: STARS
     src-channel-filter:
       rule: ""
       channel-list: []
-  stride-host:
+  tessor-host:
     src:
-      chain-id: STRIDE
+      chain-id: TESSOR
     dst:
       chain-id: HOST
     src-channel-filter:
       rule: ""
       channel-list: []
-  # stride-{new-host-zone}:
+  # tessor-{new-host-zone}:
   #   src:
-  #     chain-id: STRIDE
+  #     chain-id: TESSOR
   #   dst:
   #     chain-id: {CHAIN_ID}
   #   src-channel-filter:

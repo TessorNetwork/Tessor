@@ -2,7 +2,7 @@ package types
 
 const (
 	// ModuleName defines the module's name.
-	ModuleName = "stridevesting"
+	ModuleName = "tessorvesting"
 
 	// AttributeValueCategory is an alias for the message event value.
 	AttributeValueCategory = ModuleName

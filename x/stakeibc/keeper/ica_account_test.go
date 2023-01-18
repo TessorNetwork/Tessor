@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/Stride-Labs/stride/v4/x/stakeibc/types"
+	"github.com/TessorNetwork/tessor/v4/x/stakeibc/types"
 )
 
 func (suite *KeeperTestSuite) createTestICAAccount() types.ICAAccount {

@@ -14,10 +14,10 @@ import (
 	authvestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/Stride-Labs/stride/v4/utils"
-	"github.com/Stride-Labs/stride/v4/x/claim/types"
-	vestingtypes "github.com/Stride-Labs/stride/v4/x/claim/vesting/types"
-	epochstypes "github.com/Stride-Labs/stride/v4/x/epochs/types"
+	"github.com/TessorNetwork/tessor/v4/utils"
+	"github.com/TessorNetwork/tessor/v4/x/claim/types"
+	vestingtypes "github.com/TessorNetwork/tessor/v4/x/claim/vesting/types"
+	epochstypes "github.com/TessorNetwork/tessor/v4/x/epochs/types"
 )
 
 func (k Keeper) LoadAllocationData(ctx sdk.Context, allocationData string) bool {
@@ -34,11 +34,11 @@ func (k Keeper) LoadAllocationData(ctx sdk.Context, allocationData string) bool 
 		airdropIdentifier := data[0]
 		sourceChainAddr := data[1]
 		airdropWeight := data[2]
-		strideAddr := utils.ConvertAddressToStrideAddress(sourceChainAddr)
-		if strideAddr == "" {
+		tessorAddr := utils.ConvertAddressToTessorAddress(sourceChainAddr)
+		if tessorAddr == "" {
 			continue
 		}
-		allocationIdentifier := airdropIdentifier + strideAddr
+		allocationIdentifier := airdropIdentifier + tessorAddr
 
 		// Round weight value so that it always has 10 decimal places
 		weightFloat64, err := strconv.ParseFloat(airdropWeight, 64)
@@ -56,14 +56,14 @@ func (k Keeper) LoadAllocationData(ctx sdk.Context, allocationData string) bool 
 			continue
 		}
 
-		_, err = sdk.AccAddressFromBech32(strideAddr)
+		_, err = sdk.AccAddressFromBech32(tessorAddr)
 		if err != nil {
 			continue
 		}
 
 		records = append(records, types.ClaimRecord{
 			AirdropIdentifier: airdropIdentifier,
-			Address:           strideAddr,
+			Address:           tessorAddr,
 			Weight:            weight,
 			ActionCompleted:   []bool{false, false, false},
 		})
@@ -84,8 +84,8 @@ func (k Keeper) GetUnallocatedUsers(ctx sdk.Context, identifier string, users []
 	newUsers := []string{}
 	newWeights := []sdk.Dec{}
 	for idx, user := range users {
-		strideAddr := utils.ConvertAddressToStrideAddress(user)
-		addr, _ := sdk.AccAddressFromBech32(strideAddr)
+		tessorAddr := utils.ConvertAddressToTessorAddress(user)
+		addr, _ := sdk.AccAddressFromBech32(tessorAddr)
 		// If new user, then append user and weight
 		if !prefixStore.Has(addr) {
 			newUsers = append(newUsers, user)
@@ -402,11 +402,11 @@ func (k Keeper) GetClaimableAmountForAction(ctx sdk.Context, addr sdk.AccAddress
 // GetUserVestings returns all vestings associated to the user account
 func (k Keeper) GetUserVestings(ctx sdk.Context, addr sdk.AccAddress) (vestingtypes.Periods, sdk.Coins) {
 	acc := k.accountKeeper.GetAccount(ctx, addr)
-	strideVestingAcc, isStrideVestingAccount := acc.(*vestingtypes.StridePeriodicVestingAccount)
-	if !isStrideVestingAccount {
+	tessorVestingAcc, isTessorVestingAccount := acc.(*vestingtypes.TessorPeriodicVestingAccount)
+	if !isTessorVestingAccount {
 		return vestingtypes.Periods{}, sdk.Coins{}
 	} else {
-		return strideVestingAcc.VestingPeriods, strideVestingAcc.GetVestedCoins(ctx.BlockTime())
+		return tessorVestingAcc.VestingPeriods, tessorVestingAcc.GetVestedCoins(ctx.BlockTime())
 	}
 }
 
@@ -513,17 +513,17 @@ func (k Keeper) ClaimCoinsForAction(ctx sdk.Context, addr sdk.AccAddress, action
 	// Claims don't vest if action type is ActionFree or initial period of vesting is passed
 	if !isPassed {
 		acc = k.accountKeeper.GetAccount(ctx, addr)
-		strideVestingAcc, isStrideVestingAccount := acc.(*vestingtypes.StridePeriodicVestingAccount)
+		tessorVestingAcc, isTessorVestingAccount := acc.(*vestingtypes.TessorPeriodicVestingAccount)
 		// Check if vesting tokens already exist for this account.
-		if !isStrideVestingAccount {
-			// Convert user account into stride veting account.
+		if !isTessorVestingAccount {
+			// Convert user account into tessor veting account.
 			baseAccount := k.accountKeeper.NewAccountWithAddress(ctx, addr)
 			if _, ok := baseAccount.(*authtypes.BaseAccount); !ok {
 				return nil, sdkerrors.Wrapf(sdkerrors.ErrInvalidRequest, "invalid account type; expected: BaseAccount, got: %T", baseAccount)
 			}
 
 			periodLength := GetAirdropDurationForAction(action)
-			vestingAcc := vestingtypes.NewStridePeriodicVestingAccount(baseAccount.(*authtypes.BaseAccount), claimableAmount, []vestingtypes.Period{{
+			vestingAcc := vestingtypes.NewTessorPeriodicVestingAccount(baseAccount.(*authtypes.BaseAccount), claimableAmount, []vestingtypes.Period{{
 				StartTime:  ctx.BlockTime().Unix(),
 				Length:     periodLength,
 				Amount:     claimableAmount,
@@ -531,15 +531,15 @@ func (k Keeper) ClaimCoinsForAction(ctx sdk.Context, addr sdk.AccAddress, action
 			}})
 			k.accountKeeper.SetAccount(ctx, vestingAcc)
 		} else {
-			// Grant a new vesting to the existing stride vesting account
+			// Grant a new vesting to the existing tessor vesting account
 			periodLength := GetAirdropDurationForAction(action)
-			strideVestingAcc.AddNewGrant(vestingtypes.Period{
+			tessorVestingAcc.AddNewGrant(vestingtypes.Period{
 				StartTime:  ctx.BlockTime().Unix(),
 				Length:     periodLength,
 				Amount:     claimableAmount,
 				ActionType: int32(action),
 			})
-			k.accountKeeper.SetAccount(ctx, strideVestingAcc)
+			k.accountKeeper.SetAccount(ctx, tessorVestingAcc)
 		}
 	}
 
