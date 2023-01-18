@@ -4,7 +4,6 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/address"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/version"
 )
 
 const (
@@ -40,7 +39,6 @@ func SetupConfig() {
 
 	version.AppName = "tessor"
 	version.Name = "tessord"
-	version.Version = "v5.0.0"
 }
 
 // SetBech32Prefixes sets the global prefixes to be used when serializing addresses and public keys to Bech32 strings.
