@@ -138,7 +138,7 @@ import (
 const (
 	AccountAddressPrefix = "tessor"
 	Name                 = "tessor"
-	Version              = "5.0.0"
+	Version              = " v0.5.0"
 )
 
 // this line is used by starport scaffolding # stargate/wasm/app/enabledProposals
