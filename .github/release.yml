@@ -1,7 +1,6 @@
 <Release Title>
 
 # 🔨 Build from source
-```
 git clone https://github.com/TessorNetwork/tessor
 cd tessor && git checkout v1.0.0
 make build
