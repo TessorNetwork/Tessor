@@ -3,7 +3,7 @@
 # 🔨 Build from source
 ```
 git clone https://github.com/TessorNetwork/tessor
-cd tessor && git checkout v1.0.0
+cd tessor && git checkout v5.0.0
 make build
 ```
 
